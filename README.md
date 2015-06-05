@@ -18,12 +18,12 @@
 
 ### Questions Here *(Solutions are below)*
 
-**Question 1.** Make the following Javascript code work for any number of arguments?
+**Question 1.** Make the following Javascript code work for any number of arguments and combinations
 
 ```javascript
 console.info(''+multiply(5, 6));    // 30
 console.info(''+multiply(5)(6));    // 30
-console.info(''+multiply(5, 2, 3)); // 30
+console.info(''+multiply(5, 2)(3)); // 30
 console.info(''+multiply(5)(2)(3)); // 30
 ```
 
@@ -88,7 +88,7 @@ multiply.toString = function() {
 //Test Cases
 console.info(''+multiply(5, 6));    // 30
 console.info(''+multiply(5)(6));    // 30
-console.info(''+multiply(5, 2, 3)); // 30
+console.info(''+multiply(5, 2)(3)); // 30
 console.info(''+multiply(5)(2)(3)); // 30
 ```
 
