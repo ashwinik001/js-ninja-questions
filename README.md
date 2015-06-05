@@ -2,8 +2,8 @@
 
 ### Questions and Solutions for JS Ninjas
 
-#### Please feel free to add or update any of the following
-#### Your suggestions for improvement are more than welcome at kumarashwini@outlook.com
+##### Please feel free to add or update any of the following
+##### Your suggestions for improvement are more than welcome at kumarashwini@outlook.com
 
 
 
