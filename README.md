@@ -49,7 +49,15 @@ console.info(a == b);
 console.info(a === b);
 ```
 
-**Question 4.**  More Questions to be added... :wink:
+**Question 4.** Let's implement a getUniqueId with *auto incrementing* in JS
+
+```javascript
+getUniqueId(); // 1
+getUniqueId(); // 2
+getUniqueId(); // 3
+```
+
+**Question 5.**  More Questions to be added... :wink:
 
 
 
@@ -104,4 +112,18 @@ var a = {'key': 'value'};
 var b = {'key': 'value'};
 console.info(a == b);   // false
 console.info(a === b);  // false 
+```
+
+**Solution 4.**
+
+```javascript
+var getUniqueId = (function() {
+    var id = 0;
+    return function() {
+        return ++id;
+    };
+})();
+getUniqueId(); // 1
+getUniqueId(); // 2
+getUniqueId(); // 3
 ```
