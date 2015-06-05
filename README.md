@@ -40,7 +40,16 @@ console.log(z[x]);
 console.log(z[y] === z[x]);
 ```
 
-**Question 3.**  More Questions to be added... :wink:
+**Question 3.**  How about the equality checks between the objects with the same content
+
+```javascript
+var a = {'key': 'value'};
+var b = {'key': 'value'};
+console.info(a == b);
+console.info(a === b);
+```
+
+**Question 4.**  More Questions to be added... :wink:
 
 
 
@@ -83,7 +92,16 @@ var z={},
     x={'1':'nicer'};
 z[y] = 0;
 z[x] = 1;
-console.log(z[y]);          \\1
-console.log(z[x]);          \\1
-console.log(z[y] === z[x]); \\true
+console.log(z[y]);          //1
+console.log(z[x]);          //1
+console.log(z[y] === z[x]); //true
+```
+
+**Solution 3.**
+
+```javascript
+var a = {'key': 'value'};
+var b = {'key': 'value'};
+console.info(a == b);   // false
+console.info(a === b);  // false 
 ```
