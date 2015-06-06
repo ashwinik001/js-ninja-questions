@@ -126,6 +126,11 @@ var getUniqueId = function() {
     };
     return ++id;
 };
+
+getUniqueId(); // 1
+getUniqueId(); // 2
+getUniqueId(); // 3
+
 ```
 
 Option 2 - Using IIFE
@@ -137,12 +142,9 @@ var getUniqueId = (function() {
         return ++id;
     };
 })();
-```
 
-Let's Test with either of the two
-
-```javascript
 getUniqueId(); // 1
 getUniqueId(); // 2
 getUniqueId(); // 3
+
 ```
