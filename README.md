@@ -116,6 +116,20 @@ console.info(a === b);  // false
 
 **Solution 4.**
 
+Option 1 - Let's thrill with overriding the function itself being inside the function :skull:
+
+```javascript
+var getUniqueId = function() {
+    var id = 0;
+    getUniqueId = function() {
+        return ++id;
+    };
+    return ++id;
+};
+```
+
+Option 2 - Using IIFE
+
 ```javascript
 var getUniqueId = (function() {
     var id = 0;
@@ -123,6 +137,11 @@ var getUniqueId = (function() {
         return ++id;
     };
 })();
+```
+
+Let's Test with either of the two
+
+```javascript
 getUniqueId(); // 1
 getUniqueId(); // 2
 getUniqueId(); // 3
